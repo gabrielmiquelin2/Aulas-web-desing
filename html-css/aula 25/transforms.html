@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!--doctype informa ao agente do usuário a versão do html que deve ser renderizada-->
+<html lang=pt-br> 
+  <head> 
+         <meta charset="utf-8">
+         <meta name="author" content="Gabriel">
+         <meta name="description" content="lista de documentos">
+         <meta name="keywords" content="html5"> <!--Palavras chaves com relação a essa página-->
+          <title>transforms</title>   
+          
+          <style>
+
+            html,body{
+              height: 100%;
+              margin: 0;
+              padding: 0;
+            }
+                .div1{
+                  width: 150px;
+                  height: 50px;
+                  background: red;
+                  transform: translate(50%,50%);
+                }
+
+                .div2{
+                  width: 150px;
+                  height: 50px;
+                  background: blue;
+                 position: relative;
+                 left: 50%;
+                }
+
+                .div3{
+                  width: 50%;
+                  overflow: hidden;
+                  border: solid 3px black;
+                }
+
+                .div3-interna{
+                  background: yellow;
+                  transform: translateX(100%);
+                }
+
+                .div4{
+                  width: 50%;
+                  overflow: hidden;
+                  border: solid 3px black;
+                }
+
+                .div4-interna{
+                  background: yellow;
+                  transform: rotate(90deg);
+                }
+
+                .div5{
+                  width: 50%;
+                  overflow: hidden;
+                  border: solid 3px black;
+                }
+
+                .div5-interna{
+                  background: yellow;
+                  transform-origin: left top;
+                  transform: rotate(30deg);
+                }
+
+                .div6{
+                  width: 50%;
+                  overflow: hidden;
+                  border: solid 3px black;
+                }
+
+                .div6-interna{
+                  background: yellow;
+                  transform: rotate(30deg) translate(50px);
+                }
+
+                .div7{
+                  width: 50%;
+                  overflow: hidden;
+                  border: solid 3px black;
+                }
+
+                .div7-interna{
+                  background: yellow;
+                  transform: rotate(30deg) translate(50px);
+                }
+                
+                .div8{
+                  width: 100px;
+                  height: 100px;
+                  background: orange;
+                  transform: skew(10deg, 30deg);
+                }
+
+                .div9{
+                  width: 100px;
+                  height: 100px;
+                  background: purple;
+                  transform: scaleX(2, .65)  translateX(50%);
+                  transition: .5s;
+                 }
+
+                 .div9:hover{
+                  transform: scale(2);
+                 }
+
+                
+          </style>
+
+  </head>
+  <body>
+         <div class="div1">div1</div>
+         <div class="div2">div2</div>
+         <hr>
+         <div class="div3">
+                <div class="div3-interna"><b> Conteudo qualquer</b></div>
+                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam vitae molestias aliquam corrupti praesentium eos nostrum cum ratione, pariatur, possimus nulla molestiae cumque aperiam sapiente mollitia officiis perferendis hic libero!corrupti praesentium eos nostrum cum ratione, pariatur, possimus nulla molestiae cumque aperiam sapiente mollitia officiis perferendis hic libero!</p>
+         </div>
+         
+         <hr>
+
+    <div class="div4">
+          <div class="div4-interna"><b> Conteudo qualquer</b></div>
+               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam vitae molestias aliquam corrupti praesentium eos nostrum cum ratione, pariatur, possimus nulla molestiae cumque aperiam sapiente mollitia officiis perferendis hic libero!corrupti praesentium eos nostrum cum ratione, pariatur, possimus nulla molestiae cumque aperiam sapiente mollitia officiis perferendis hic libero!</p>
+   </div>
+
+   <hr>
+
+   <div class="div6">
+         <div class="div6-interna"><b> Conteudo qualquer</b></div>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam vitae molestias aliquam corrupti praesentium eos nostrum cum ratione, pariatur, possimus nulla molestiae cumque aperiam sapiente mollitia officiis perferendis hic libero!corrupti praesentium eos nostrum cum ratione, pariatur, possimus nulla molestiae cumque aperiam sapiente mollitia officiis perferendis hic libero!</p>
+
+            </div>
+  </div>
+
+  <div class="div7">
+    <div class="div7-interna"><b> Conteudo qualquer</b></div>
+         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam vitae molestias aliquam corrupti praesentium eos nostrum cum ratione, pariatur, possimus nulla molestiae cumque aperiam sapiente mollitia officiis perferendis hic libero!corrupti praesentium eos nostrum cum ratione, pariatur, possimus nulla molestiae cumque aperiam sapiente mollitia officiis perferendis hic libero!</p>
+
+       </div>
+</div>
+
+<hr>
+
+   <div class="div8">div 8</div>
+   
+   <div class="div9">div 9</div>
+
+
+
+</div>
+  </body>
+</html>

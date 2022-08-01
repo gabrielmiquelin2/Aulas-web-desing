@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!--doctype informa ao agente do usuário a versão do html que deve ser renderizada-->
+<html lang=pt-br> 
+  <head> 
+         <meta charset="utf-8">
+         <meta name="author" content="Gabriel">
+         <meta name="description" content="lista de documentos">
+         <meta name="keywords" content="html5"> <!--Palavras chaves com relação a essa página-->
+          <title>estrutura báscia</title>  
+          
+          <style>
+            article:nth-child(1) a{
+              color: red;
+            }
+
+            article:nth-child(3) > p{
+              color: red;
+            }
+
+            article:nth-child(5) h3 + p{
+              margin-top: 50px;
+              
+            }
+
+            article:nth-child(7) h3 ~ p{
+            color: orange;
+            }
+
+            article:not(.destaque){
+              color: green;
+            }
+
+            .destaque{
+              background: yellow;
+              color:black;
+            }
+
+            a[href="#"]{
+              opacity: .2;
+            }
+
+            a[href^="http"]{
+              color: rebeccapurple;
+            }
+
+            a[title]{
+              color: aqua;
+            }
+
+            a[href$=".pdf"]{
+              text-decoration:none
+            }
+          </style>
+
+  </head>
+  <body>
+          <article>
+              <h3>Título</h3>
+
+                 <p>paragráfo <a href="#">apenas um link com <b>negrito</b></a></p>
+                 <p>paragráfo <a href="#">apenas um link com <b>negrito</b></a></p>
+                 <p>paragráfo <a href="#">apenas um link com <b>negrito</b></a></p>
+          </article>
+
+          <hr>
+
+          <article>
+            <h3>Título</h3>
+
+               <p>paragráfo <a href="#">apenas um link com <b>negrito</b></a></p>
+               <p>paragráfo <a href="#">apenas um link com <b>negrito</b></a></p>
+               <p>paragráfo <a href="#">apenas um link com <b>negrito</b></a></p>
+        </article>
+
+          <hr>
+
+          <article>
+            <h3>Título</h3>
+
+               <p>paragráfo <a href="#">apenas um link com <b>negrito</b></a></p>
+               <p>paragráfo <a href="#">apenas um link com <b>negrito</b></a></p>
+               <p>paragráfo <a href="#">apenas um link com <b>negrito</b></a></p>
+        </article>  
+
+        <hr>
+
+          <article>
+            <p>antes do titulo não recebe a formatação laranja</p>
+            <h3>Título</h3>
+
+               <p>paragráfo <a href="#">apenas um link com <b>negrito</b></a></p>
+               <p>paragráfo <a href="#">apenas um link com <b>negrito</b></a></p>
+               <p>paragráfo <a href="#">apenas um link com <b>negrito</b></a></p>
+        </article>  
+
+        <hr>
+
+          <article class="destaque">
+            <p>antes do titulo não recebe a formatação laranja</p>
+            <h3>Título</h3>
+
+               <p>paragráfo <a href="#">apenas um link com <b>negrito</b></a></p>
+               <p>paragráfo <a href="#">apenas um link com <b>negrito</b></a></p>
+               <p>paragráfo <a href="#">apenas um link com <b>negrito</b></a></p>
+        </article>  
+
+           <ul> 
+                <li><a href="#">Link falso</a></li>
+                <li><a href="#">Link falso</a></li>
+                <li><a href="https://github.com/gabrielmiquelin2" target="_blank">Link externo</a></li>
+
+                <li><a href="https://github.com/gabrielmiquelin2/qq.pdf" target="_blank">Link externo</a></li>
+
+                <li><a href="transições.html" title="Veja o exercício anterior">Link interno</a></li>
+           </ul>
+             
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+  </body>
+</html>
+

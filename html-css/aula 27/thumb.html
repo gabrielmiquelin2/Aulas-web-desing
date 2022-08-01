@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--doctype informa ao agente do usuário a versão do html que deve ser renderizada-->
+<html lang=pt-br> 
+  <head> 
+         <meta charset="utf-8">
+         <meta name="author" content="Gabriel">
+         <meta name="description" content="lista de documentos">
+         <meta name="keywords" content="html5"> <!--Palavras chaves com relação a essa página-->
+          <title>estrutura báscia</title>    
+
+           <style>
+
+                body{font-family: sans-serif;
+                }
+                 
+                a{
+                  display: block;
+                  margin: 10px;
+                  position: relative;
+                }
+
+                img{
+                  width: 100%;
+                  display: block;
+                }
+
+                a:before{
+                  content: '';
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  background: transparent;
+                  transition: all .5s;
+                }
+
+                a:hover:before{
+                  background: rgba(0,0,0,.5);
+                }
+
+               
+                a:hover:after{
+                  content: 'Veja +';
+                  display: block;
+                  position: absolute;
+                  border: 3px solid white;
+                  color: white;
+                  top: 50%;
+                  left: 50%;
+                  padding:10px 20px ;
+                  transform: translate(-50%, -50%);
+                }
+
+           </style>
+
+  </head>
+  <body> 
+          <section>
+                 <article>
+                      <a href="#">
+                           <img src="imagens/thumbs/01.jpg" alt="">
+                      </a>
+                 </article>
+          </section>
+
+          <section>
+                  <article>
+                      <a href="#">
+                           <img src="imagens/thumbs/02.jpg" alt="">
+                      </a>
+                  </article>
+          </section>
+
+          <section>
+                  <article>
+                      <a href="#">
+                           <img src="imagens/thumbs/03.jpg" alt="">
+                      </a>
+                  </article>
+          </section>
+
+          
+          <section>
+                  <article>
+                      <a href="#">
+                            <img src="imagens/thumbs/04.jpg" alt="">
+                      </a>
+                  </article>
+          </section>
+
+    
+          <section>
+                    <article>
+                         <a href="#">
+                              <img src="imagens/thumbs/05.jpg" alt="">
+                         </a>
+                    </article>
+          </section>
+
+          <section>
+                    <article>
+                      <a href="#">
+                            <img src="imagens/thumbs/06.jpg" alt="">
+                      </a>
+                    </article>
+          </section>
+          
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--doctype informa ao agente do usuário a versão do html que deve ser renderizada-->
+<html lang=pt-br> 
+  <head> 
+         <meta charset="utf-8">
+         <meta name="author" content="Gabriel">
+         <meta name="description" content="lista de documentos">
+         <meta name="keywords" content="html5"> <!--Palavras chaves com relação a essa página-->
+          <title>estrutura báscia</title>    
+
+          <style>
+               .gridContainer{
+                 width: 90%;
+                 background: #ccc;
+                 margin: 30px auto;
+                 display: grid;
+                 gap: 10px;
+
+                 grid-template-columns: repeat(auto-fit,100px);
+
+                 grid-auto-rows: 50px 150px 10px ;
+               }
+
+               .gridItem{
+                background-color: orange;
+                padding: 15px;
+                font-family: sans-serif;
+              }
+          </style>
+
+  </head>
+  <body>
+
+    <h2>Grid Layouy</h2>
+
+    <div class="gridContainer">
+         <div class="gridItem">1</div>
+         <div class="gridItem">2</div>
+         <div class="gridItem">3</div>
+          <div class="gridItem">4</div> 
+          <div class="gridItem">5</div>
+         <div class="gridItem">6</div>
+         <div class="gridItem">7</div>
+         <div class="gridItem">8</div>
+         <div class="gridItem">9</div>
+         <div class="gridItem">10</div>
+         <div class="gridItem">11</div>
+         <div class="gridItem">12</div> 
+    </div>
+         
+  </body>
+</html>

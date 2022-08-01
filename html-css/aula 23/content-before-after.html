@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--doctype informa ao agente do usuário a versão do html que deve ser renderizada-->
+<html lang=pt-br> 
+  <head> 
+         <meta charset="utf-8">
+         <meta name="author" content="Gabriel">
+         <meta name="description" content="lista de documentos">
+         <meta name="keywords" content="html5"> <!--Palavras chaves com relação a essa página-->
+          <title>estrutura báscia</title>  
+          
+          <style>
+                div{
+                  border: 5px solid blueviolet;
+                  padding: 25px;
+                  position: relative;
+                  margin: 25px;
+                }
+
+                div:before{
+                  content: "texto before";
+                 background-color: aqua;
+                }
+
+                div:after{
+                  content:"";
+                  background: red;
+                  width: 25px;
+                  height: 25px;
+                  display: inline-block;
+                  position: absolute;      
+                  bottom: 0 ;
+                  right: 0;  
+                }
+
+          </style>
+
+  </head>
+  <body>      
+
+        <div> Texto principal da div</div>
+         
+        <article>
+            <p>antes do titulo</p>
+            <h3>Título</h3>
+
+               <p>paragráfo <a href="#">apenas um link com <b>negrito</b></a></p>
+               <p>paragráfo <a href="#">apenas um link com <b>negrito</b></a></p>
+               <p>paragráfo <a href="#">apenas um link com <b>negrito</b></a></p>
+        </article>  
+
+          <ul> 
+                <li><a href="#">Link falso</a></li>
+                <li><a href="#">Link falso</a></li>
+                <li><a href="https://github.com/gabrielmiquelin2" target="_blank">Link externo</a></li>
+                <li><a href="https://github.com/gabrielmiquelin2/qq.pdf" target="_blank">Link externo</a></li>
+                <li><a href="transições.html" title="Veja o exercício anterior">Link interno</a></li>
+          </ul>
+             
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+  </body>
+</html>

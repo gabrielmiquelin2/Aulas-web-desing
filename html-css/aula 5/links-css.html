@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--doctype informa ao agente do usuário a versão do html que deve ser renderizada-->
+<html> 
+  <head> 
+         <meta charset="utf-8">
+         <meta name="author" content="Gabriel">
+         <meta name="description" content="lista de documentos">
+         <meta name="keywords" content="html5"> <!--Palavras chaves com relação a essa página-->
+         
+        <title>links pseudo classe</title>
+         
+        <style>
+
+          body{color:rgb(0, 255, 60);
+          }
+
+          p, li{ 
+              
+              font-family: sans-serif;
+          }
+
+          /* usando as pseudos classes na tag "a"*/
+          a{
+            color: rgb(0, 255, 229);
+          }
+          a:hover{
+            background-color: rgb(119, 0, 128);
+            color:yellow;
+          }
+          a:visited{
+            color: red;
+          }
+
+          a:active{
+            color: orange;
+          }
+           ul li{
+              list-style-type: disc;
+            }
+
+            ol li{
+              list-style-type: lower-latin;
+              list-style-position: inside;/*dentro da lista*/
+            }
+            
+        </style>
+  </head>
+  <body>
+       <a href="01_teste.html">Veja o arquivo 01 teste.html</a><br>
+       <a href="02_teste.html">Veja o segundo arquivo</a>
+
+       <ul>
+        <li>item 2</li>
+        <li>Item 2</li>
+        <li>item 3</li>
+       </ul>
+
+       <ol>
+          <li>item 2</li>
+          <li>Item 2</li>
+          <li>item 3</li>
+       </ol>
+
+       <p>Paragráfo</p>
+  </body>
+</html>
