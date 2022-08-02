@@ -1,2 +1,2 @@
 # Aulas-web-desing
- Curso de desnvolvimento web da Udemy
+ Curso de web design da Udemy
